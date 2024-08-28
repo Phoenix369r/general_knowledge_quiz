@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+#app {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#options {
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#options button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#options button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#next-btn, #end-game-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+#next-btn {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+#next-btn:hover {
+    background-color: #1c75db;
+    transform: scale(1.05);
+}
+
+#end-game-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#end-game-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
